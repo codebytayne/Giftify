@@ -14,3 +14,4 @@ Este projeto consiste em um site que sorteia presentes aleatórios a partir de u
 ![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=codebytayne&repo=Presentes-Sorteador&layout=compact)
