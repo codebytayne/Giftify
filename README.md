@@ -1,6 +1,7 @@
 # 🎁 Sorteio de Presentes Aleatórios 🎲
 
 Este projeto consiste em um site que sorteia presentes aleatórios a partir de uma lista configurável, permitindo aos usuários descobrir presentes de forma divertida e prática para ocasiões especiais, como aniversários, festas e eventos.
+🔗 https://sorteieumpresente.netlify.app
 
 ## 🔁 Funcionalidades
 
