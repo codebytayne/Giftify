@@ -1,0 +1,13 @@
+{
+  "name": "sorteie-um-presente",
+  "version": "1.0.0",
+  "description": "Este projeto consiste em um site que sorteia presentes aleatórios a partir de uma lista configurável, permitindo aos usuários descobrir presentes de forma divertida e prática para ocasiões especiais, como aniversários, festas e eventos.",
+  "main": "script.js",
+  "scripts": {
+    "start": "echo 'Inicie seu projeto com um servidor local, se necessário'",
+    "build": "echo 'Nenhum processo de build necessário'"
+  },
+"keywords": ["sorteio", "presentes", "lista configurável", "web app"],
+  "author": "codebytayne",
+  "license": "ISC"
+}
