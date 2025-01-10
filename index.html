@@ -4,43 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorteador de Presentes</title>
-    <link rel="icon" href="https://i.ibb.co/0yDL1Nf/favicon-32x32.png" type="image/x-icon">
+    <link rel="icon" href="../Sorteie-um-presente/src/media/favicon-32x32.png" type="png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>SORTEIE UM<br>PRESENTE</h1>
-    </header>
-    
-    <figure id="img-caixa-de-presente">
-        <img src="https://s7.gifyu.com/images/SGBjd.png" 
-             alt="imagem da caixa de presente">
-    </figure>
-    
-    <div class="subtitulo-list">
-        <p>
-          ÚTIL<br>
-          INÚTIL<br>
-          CONFUSO<br>
-          ESQUISITO
-        </p>
+    <div class="container">
+        <h1>sorteie um<br><span>Presente</span></h1>
+    </div>
+
+    <div id="img-caixa-de-presente" class="container">
+        <img src="../Sorteie-um-presente/src/media/presente.png"
+        alt="img-caixa-de-presente">
+    </div>
+
+    <div id="lista" class="container">
+        <ul class="sem-marcadores">
+            <li class="util">ÚTIL</li>
+            <li class="inutil">INUTIL</li>
+            <li class="confuso">CONFUSO</li>
+            <li class="esquisito">ESQUISITO</li>
+        </ul>
+    </div>
+
+    <div id="gif-seta" class="container">
+        <img src="../Sorteie-um-presente/src/media/seta.gif"
+        alt="gif-seta">
     </div>
     
-    <figure id="seta-para-baixo">
-        <img src="https://s7.gifyu.com/images/SJkyz.gif" alt="imagem da seta">
-    </figure>
-    
-    <section class="botao-start">
+    <div class="botao">
         <button type="button" class="action-button" aria-label="Sortear presente" onclick="sortearPresente()">
-            <img src="https://s7.gifyu.com/images/SG1mK.png" alt="Sortear botão">
+            SORTEAR PRESENTE
         </button>
-    
+
         <script src="script.js"></script>
-
-    </section>
-   
-    <footer>
-
-    </footer>
+    </div>
+      
+      
 </body>
 </html>

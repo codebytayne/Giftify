@@ -1,5 +1,4 @@
 function sortearPresente() {
-    // Lista de links dos presentes
     const links = [
        'https://s.shopee.com.br/40PVIhO1PA',
             'https://s.shopee.com.br/2LHHJisTCq',
@@ -99,14 +98,12 @@ function sortearPresente() {
             'https://s.shopee.com.br/1B5KHXx71Y'
     ];
 
-    // Sorteia um índice aleatório da lista de links
+   
     const linkSorteado = links[Math.floor(Math.random() * links.length)];
 
-    // Abre o link sorteado em uma nova aba
     window.open(linkSorteado, "_blank");
 }
 
-// Adiciona o evento ao botão após o carregamento da página
 document.addEventListener("DOMContentLoaded", () => {
     const botaoSortear = document.getElementById("btnSortear");
     botaoSortear.addEventListener("click", sortearPresente);

@@ -1,105 +1,316 @@
-/* Importação da fonte Acme do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
-
-/* Importação da fonte Roboto do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-html, body {
+@font-face {
+    font-family: "CHRICI";
+    src: url("../Sorteie-um-presente/src/fontes/CHRICI.TTF") format("truetype");
+}
+  
+@font-face {
+    font-family: "confonte";
+    src: url("../Sorteie-um-presente/src/fontes/confonte.ttf") format("truetype");
+}
+  
+@font-face {
+    font-family: "eszfont";
+    src: url("../Sorteie-um-presente/src/fontes/eszfont.ttf") format("truetype");
+}
+  
+@font-face {
+    font-family: "inutfont";
+    src: url("../Sorteie-um-presente/src/fontes/inutfont.ttf") format("truetype");
+}
+  
+@font-face {
+    font-family: "utfont";
+    src: url("../Sorteie-um-presente/src/fontes/utfont.ttf") format("truetype");
+}
+  
+@font-face {
+    font-family: "sortfont";
+    src: url("../Sorteie-um-presente/src/fontes/sortfont.ttf") format("truetype");
+}
+  
+body {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     width: 100%;
     height: 100%;
-    min-height: 100vh; 
-    padding-top: 96px;
+    min-height: 100vh;
+    padding-top: 88px;
+    background-image: url("../Sorteie-um-presente/src/media/backgroud.png");
+    background-color: rgba(255, 255, 255, 0.685);
 }
+ 
+
+
+.container, .botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
 
 
 h1 {
-    font-family: 'Acme', sans-serif;
-    font-size: clamp(64px, calc(4.5vw + 32px), 120px);
-    color: red;
-    line-height: 79%;
-    letter-spacing: clamp(-1px, -0.2vw, -3px);
-    text-transform: uppercase;
-    margin-top: clamp(96px, 8vw, 160px);
-    margin: 0 auto;
-    max-width: 15ch;
+    font-family: "CHRICI", sans-serif;
+    margin: 0;
+    font-size: 104px;
+    line-height: 92%;
+    letter-spacing: -2px;
     text-align: center;
-    margin-bottom: clamp(18px, 2vw + 4px, 24px);
+    color: #a10202;
+    text-shadow: 2px 2px 0 #f0f0f0, -2px -2px 0 #d3d3d3, 2px -2px 0 #a5a5a5, -2px 2px 0 #64646491;
 }
 
-#img-caixa-de-presente {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    width: 100%; 
-    margin: 0 auto; 
-    margin-bottom: clamp(18px, 2vw + 4px, 24px);
+@media (max-width: 768px) {
+    h1 {
+        font-size: 80px;
+    }
 }
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 60px;
+    }
+}
+  
+
 
 #img-caixa-de-presente img {
-    width: clamp(120px, calc(8vw + 32px), 226px);
-    height: auto;
-    max-width: 100%; 
+    width: 232px;
+    height: 232px;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
+    animation: shake 2s infinite;
 }
 
+@media (max-width: 768px) {
+    #img-caixa-de-presente img {
+        width: 180px;
+        height: 180px;
+    }
+}
 
-.subtitulo-list p {
-    font-family: 'Roboto', sans-serif;
-    font-size: clamp(24px, 5vw, 48px);
-    line-height: 92%;
-    letter-spacing: clamp(-1px, -0.3vw, -2px); 
-    color: blueviolet;
-    text-transform: uppercase;
-    font-weight: bold;
+@media (max-width: 480px) {
+    #img-caixa-de-presente img {
+        width: 120px;
+        height: 120px;
+    }
+}
+ 
+
+
+
+#lista {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+  
+.sem-marcadores {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.sem-marcadores li {
+    padding: 0;
+}
+  
+.util {
+    font-family: "utfont", sans-serif;
+    color: #040444;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 44px;
+    margin-bottom: 8px;
+    margin-top: 8px;
     text-align: center;
-    margin: 0; 
-    margin-bottom: clamp(6px, 2vw, 12px); 
+}
+
+@media (max-width: 768px) {
+    .util {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .util {
+        font-size: 28px;
+    }
+}
+ 
+
+
+
+.inutil {
+    font-family: "inutfont", sans-serif;
+    color: #1fd397;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 44px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .inutil {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .inutil {
+        font-size: 28px;
+    }
+}
+ 
+
+
+
+.confuso {
+    font-family: "confonte", sans-serif;
+    color: #6d33a7;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.212);
+    font-size: 28px;
+    text-align: center;
+}
+  
+@media (max-width: 768px) {
+    .confuso {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .confuso {
+        font-size: 18px;
+    }
 }
 
 
-#seta-para-baixo {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    width: 100%; 
-    margin: 0 auto; 
+
+.esquisito {
+    font-family: "eszfont", sans-serif;
+    font-size: 60px;
+    background: linear-gradient(to right, #e04f0cea, #b41070);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.212);
+    margin-bottom: 8px;
+    text-align: center;
 }
 
-#seta-para-baixo img {
-    width: clamp(64px, calc(3vw + 44px), 72px);
-    height: clamp(64px, calc(3vw + 44px), 72px);
-    max-width: 100%;
-    margin: clamp(16px, 2.5vw, 32px) 0; /* Ajuste de margem superior/inferior */
+@media (max-width: 768px) {
+    .esquisito {
+        font-size: 44px;
+    }
 }
 
-.botao-start {
-    width: 50%;
+@media (max-width: 480px) {
+    .esquisito {
+        font-size: 38px;
+    }
+}
+ 
+
+
+
+#gif-seta {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 72px;
+    width: 72px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    padding: 10px;
 }
 
-.action-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    width: clamp(150px, calc(10vw + 100px), 300px);
-    height: clamp (50px, calc(3.33vw + 33px), 100px);
-    transition: transform 0.2s ease;
+@media (max-width: 768px) {
+    #gif-seta {
+        height: 56px;
+        width: 56px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    #gif-seta {
+        height: 48px;
+        width: 48px;
+        padding: 7px;
+    }
+}
+ 
+
+
+#gif-seta img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+  
+.botao {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 176px;
+}
+  
+.action-button {
+    background: linear-gradient(45deg, #040444, #1fd397, #6d33a7, #e04f0cea, #b41070);
+    background-size: 400%;
+    border: 3px solid;
+    color: #ffffff;
+    padding: 20px 40px;
+    font-family: "sortfont", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: 28px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 32px;
+    animation: degrade 5s infinite linear;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 768px) {
+    .action-button {
+        font-size: 22px;
+        padding: 16px 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .action-button {
+        font-size: 20px;
+        padding: 14px 28px;
+    }
+}
+
+
+
+  
 .action-button:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+  
+
+
+@keyframes degrade {
+    0% {background-position-x: 0%;}
+    100% {background-position: 400%;}
 }
 
-footer {
-    width: 100%;
-    height: 100px;
-    background:none;
+@keyframes shake {
+    0% { transform: translate(2px, 2px) rotate(0deg); }
+    10% { transform: translate(-2px, -4px) rotate(-2deg); }
+    20% { transform: translate(-6px, 0px) rotate(2deg); }
+    30% { transform: translate(6px, 4px) rotate(0deg); }
+    40% { transform: translate(2px, -2px) rotate(2deg); }
+    50% { transform: translate(-2px, 4px) rotate(-2deg); }
+    60% { transform: translate(-6px, 2px) rotate(0deg); }
+    70% { transform: translate(6px, 2px) rotate(-2deg); }
+    80% { transform: translate(-2px, -2px) rotate(2deg); }
+    90% { transform: translate(2px, 4px) rotate(0deg); }
+    100% { transform: translate(2px, -4px) rotate(-2deg); }
 }
+  
