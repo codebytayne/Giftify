@@ -2,6 +2,8 @@
 
 Este projeto consiste em um site que sorteia produtos aleatórios a partir de uma lista configurável, permitindo aos usuários descobrir presentes de forma divertida e prática para ocasiões especiais, como aniversários, festas e eventos.
 
+🔗 https://codebytayne.github.io/Giftify/
+
 ## 🔁 Funcionalidades:
 
 - **✅ Sorteio de Presentes Aleatórios:** O usuário pode clicar em um botão para sortear um presente aleatório da lista.
