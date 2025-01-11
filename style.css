@@ -1,31 +1,31 @@
 @font-face {
     font-family: "CHRICI";
-    src: url("../Sorteie-um-presente/src/fontes/CHRICI.TTF") format("truetype");
+    src: url("../Giftify/src/fontes/CHRICI.ttf") format("truetype");
 }
   
 @font-face {
     font-family: "confonte";
-    src: url("../Sorteie-um-presente/src/fontes/confonte.ttf") format("truetype");
+    src: url("../Giftify/src/fontes/confonte.ttf") format("truetype");
 }
   
 @font-face {
     font-family: "eszfont";
-    src: url("../Sorteie-um-presente/src/fontes/eszfont.ttf") format("truetype");
+    src: url("../Giftify/src/fontes/eszfont.ttf") format("truetype");
 }
   
 @font-face {
     font-family: "inutfont";
-    src: url("../Sorteie-um-presente/src/fontes/inutfont.ttf") format("truetype");
+    src: url("../Giftify/src/fontes/inutfont.ttf") format("truetype");
 }
   
 @font-face {
     font-family: "utfont";
-    src: url("../Sorteie-um-presente/src/fontes/utfont.ttf") format("truetype");
+    src: url("../Giftify/src/fontes/utfont.ttf") format("truetype");
 }
   
 @font-face {
     font-family: "sortfont";
-    src: url("../Sorteie-um-presente/src/fontes/sortfont.ttf") format("truetype");
+    src: url("../Giftify/src/fontes/sortfont.ttf") format("truetype");
 }
   
 body {
@@ -35,7 +35,7 @@ body {
     height: 100%;
     min-height: 100vh;
     padding-top: 88px;
-    background-image: url("../Sorteie-um-presente/src/media/backgroud.png");
+    background-image: url("../Giftify/src/media/background.png");
     background-color: rgba(255, 255, 255, 0.685);
 }
  
