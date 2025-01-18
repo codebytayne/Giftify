@@ -1,8 +1,12 @@
 # Giftify 🎁 Presentes Aleatórios 🎲
 
-Este projeto consiste em um site que sorteia produtos aleatórios a partir de uma lista configurável, permitindo aos usuários descobrir presentes de forma divertida e prática para ocasiões especiais, como aniversários, festas e eventos.
+> Este projeto consiste em um site que sorteia produtos aleatórios a partir de uma lista configurável, permitindo aos usuários descobrir presentes de forma divertida e prática para ocasiões especiais, como aniversários, festas e eventos.
 
-🔗 https://codebytayne.github.io/Giftify/
+🔗 [Acesse o jogo aqui](https://codebytayne.github.io/Giftify/)
+
+## 🎯 Demonstração 
+
+![Texto alternativo](src/media/banner.gif/)
 
 ## 🔁 Funcionalidades:
 
