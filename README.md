@@ -6,7 +6,7 @@
 
 ## 🎯 Demonstração 
 
-![Texto alternativo](src/media/banner.gif/)
+![Texto alternativo](/src/media/banner.gif/)
 
 ## 🔁 Funcionalidades:
 
